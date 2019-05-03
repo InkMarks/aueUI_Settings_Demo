@@ -4,40 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F8F8"
+    android:background="#f1f1f1"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:paddingLeft="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
         android:text="@string/main_title"
+        android:textStyle="bold"
         android:textColor="@color/blue"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/search"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_weight="1"
-        android:background="@android:drawable/ic_menu_search"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="380dp"
-        android:layout_height="649dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="75dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/round_bg"
@@ -67,9 +64,8 @@
 
                     <Button
                         android:id="@+id/button3"
-                        android:layout_width="50dp"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
                         android:background="@drawable/wifi" />
 
                     <LinearLayout
@@ -82,22 +78,23 @@
                             android:id="@+id/textView4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/wifi"
                             android:textColor="@color/blue"
-                            android:textSize="18sp" />
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/textView3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/wifi_sum"
-                            android:textColor="#404040" />
+                            android:textColor="#404040"
+                            android:textSize="16sp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -107,14 +104,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginRight="2dp"
                     android:orientation="horizontal">
 
                     <Button
-                        android:layout_width="40dp"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
                         android:background="@drawable/connected_device" />
 
                     <LinearLayout
@@ -126,21 +122,22 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/connected_device"
                             android:textColor="@color/blue"
-                            android:textSize="18sp" />
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/connected_device_sum"
-                            android:textColor="#404040" />
+                            android:textColor="#404040"
+                            android:textSize="16sp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -150,14 +147,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginRight="2dp"
                     android:orientation="horizontal">
 
                     <Button
-                        android:layout_width="38dp"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
                         android:background="@drawable/app" />
 
                     <LinearLayout
@@ -169,21 +165,22 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/app"
                             android:textColor="@color/blue"
-                            android:textSize="18sp" />
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/app_sum"
-                            android:textColor="#404040" />
+                            android:textColor="#404040"
+                            android:textSize="16sp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -193,14 +190,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginRight="2dp"
                     android:orientation="horizontal">
 
                     <Button
-                        android:layout_width="28dp"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
                         android:background="@drawable/battery" />
 
                     <LinearLayout
@@ -212,21 +208,23 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+
+                            android:layout_marginTop="10dp"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/battery"
                             android:textColor="@color/blue"
-                            android:textSize="18sp" />
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/battery_sum"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
-                            android:textColor="#404040" />
+                            android:paddingLeft="5dp"
+                            android:textColor="#404040"
+                            android:textSize="16sp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -236,14 +234,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginRight="2dp"
                     android:orientation="horizontal">
 
                     <Button
-                        android:layout_width="40dp"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
                         android:background="@drawable/display" />
 
                     <LinearLayout
@@ -255,21 +252,22 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/display"
                             android:textColor="@color/blue"
-                            android:textSize="18sp" />
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/display_sum"
-                            android:textColor="#404040" />
+                            android:textColor="#404040"
+                            android:textSize="16sp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -279,15 +277,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginRight="2dp"
                     android:orientation="horizontal">
 
                     <Button
-                        android:layout_width="38dp"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/app" />
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/sound" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -298,21 +295,22 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/sound"
                             android:textColor="@color/blue"
-                            android:textSize="18sp" />
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/sound_sum"
-                            android:textColor="#404040" />
+                            android:textColor="#404040"
+                            android:textSize="16sp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -322,15 +320,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginRight="2dp"
                     android:orientation="horizontal">
 
                     <Button
-                        android:layout_width="27dp"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/app" />
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/storage" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -341,21 +338,22 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/storage"
                             android:textColor="@color/blue"
-                            android:textSize="18sp" />
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/storage_sum"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
-                            android:textColor="#404040" />
+                            android:paddingLeft="5dp"
+                            android:textColor="#404040"
+                            android:textSize="16sp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -365,15 +363,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginRight="2dp"
                     android:orientation="horizontal">
 
                     <Button
-                        android:layout_width="34dp"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/app" />
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/safe" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -384,21 +381,22 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/safe"
                             android:textColor="@color/blue"
-                            android:textSize="18sp" />
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/safe_sum"
-                            android:textColor="#404040" />
+                            android:textColor="#404040"
+                            android:textSize="16sp" />
                     </LinearLayout>
 
 
@@ -409,15 +407,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginRight="2dp"
                     android:orientation="horizontal">
 
                     <Button
-                        android:layout_width="34dp"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/app" />
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/about" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -428,21 +425,20 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:gravity="center|left"
                             android:paddingLeft="10dp"
                             android:text="@string/about"
                             android:textColor="@color/blue"
-                            android:textSize="18sp" />
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:gravity="center|left"
-                            android:paddingLeft="10dp"
-                            android:text="@string/about_sum"
-                            android:textColor="#404040" />
+                            android:paddingLeft="5dp"
+                            android:textColor="#404040"
+                            android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
