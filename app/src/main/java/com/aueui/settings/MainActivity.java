@@ -69,15 +69,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(Settings.ACTION_SECURITY_SETTINGS));
             }
         });
-        search.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    startActivity(new Intent(Settings.ACTION_SEARCH_SETTINGS));
-                } catch (Exception e) {
-                }
-            }
-        });
+
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -98,7 +90,6 @@ public class MainActivity extends BaseActivity {
         sound = findViewById(R.id.sound);
         storage = findViewById(R.id.storage);
         safe = findViewById(R.id.safe);
-        search = findViewById(R.id.search);
         about = findViewById(R.id.about);
     }
 }

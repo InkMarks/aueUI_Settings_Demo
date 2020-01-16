@@ -15,8 +15,8 @@
     <string name="storage">储存</string>
     <string name="safe">安全性和位置信息</string>
     <string name="safe_sum">屏幕锁定</string>
-    <string name="about">关于手机</string>
+    <string name="about">我的设备</string>
     <string name="about_sum">aueUI Dev 1.0</string>
-    <string name="about_title">关于手机</string>
+    <string name="about_title">我的设备</string>
     <string name="version">aueUI Dev 1.0</string>
 </resources>
