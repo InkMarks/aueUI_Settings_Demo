@@ -7,30 +7,34 @@
     android:background="#f1f1f1"
     tools:context=".MainActivity">
 
-
-    <TextView
-        android:id="@+id/textView"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/about_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="15dp"
-        android:text="@string/main_title"
-        android:textColor="@color/back"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:fitsSystemWindows="true"
+        android:paddingTop="10dp"
+        tools:ignore="MissingConstraints">
 
 
-    <include
-        layout="@layout/search" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+    </android.support.v7.widget.Toolbar>
+
+
+
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="15dp"
         android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,7 +50,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
+                <include
+                    layout="@layout/search" />
                 <LinearLayout
                     android:id="@+id/wifi_l"
                     android:layout_width="match_parent"
@@ -419,17 +424,17 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center|left"
-                            android:paddingLeft="8dp"
+                            android:paddingTop="8dp"
+                            android:paddingLeft="5dp"
                             android:text="@string/about"
                             android:textColor="@color/back"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-
+                            android:textSize="18sp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center|left"
                             android:paddingLeft="5dp"
+                            android:text="@string/about_sum"
                             android:textColor="#404040"
                             android:textSize="12sp" />
                     </LinearLayout>

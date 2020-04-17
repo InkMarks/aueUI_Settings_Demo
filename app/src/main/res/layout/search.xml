@@ -10,7 +10,6 @@
         android:background="@drawable/search_btn"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginTop="55dp"
         android:layout_gravity="center"
         android:orientation="horizontal">
 
@@ -34,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="66dp"
-                android:text="搜索设置选项"
+                android:hint="搜索设置选项"
                 android:textStyle="bold"
                 android:textColor="@color/blue"
                 android:textSize="18sp" />
