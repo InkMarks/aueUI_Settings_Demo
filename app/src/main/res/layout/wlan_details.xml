@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    tools:context=".Activities.Wlan_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:paddingTop="10dp"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="网络详情"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="22sp" />
+
+
+            <Button
+                android:id="@+id/wlan_details_back"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/back"
+                tools:ignore="MissingConstraints" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="590dp"
+            app:layout_constraintTop_toBottomOf="@+id/wlan_toolbar"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:orientation="horizontal">
+
+
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/wifi_1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center|left"
+                        android:text="aueUI WEB"
+                        android:textColor="@color/back"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:text="已连接"
+                        android:textColor="@color/back"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="信号强度"
+                            android:textColor="@color/back"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="极佳"
+                            android:textColor="@color/back"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="频率"
+                            android:textColor="@color/back"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="5 GHz"
+                            android:textColor="@color/back"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="安全性"
+                            android:textColor="@color/back"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="WAP/WPA2-Personal"
+                            android:textColor="@color/back"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="网络使用情况"
+                            android:textColor="@color/back"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="自动检测"
+                            android:textColor="@color/back"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:paddingLeft="5dp"
+                            android:text="全部详情"
+                            android:textColor="@color/back"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/wlan_detalis_box" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+
+
+
+

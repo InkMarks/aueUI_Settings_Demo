@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">设置</string>
     <string name="main_title">设置</string>
-    <string name="wifi">网络和互联网</string>
-    <string name="wifi_sum">WLAN、移动网络、流量使用、热点</string>
+    <string name="netowrk">网络和互联网</string>
+    <string name="netowrk_sum">WLAN、移动网络、流量使用、热点</string>
     <string name="connected_device">已关联的设备</string>
     <string name="connected_device_sum">蓝牙、投射、NFC</string>
     <string name="app">应用和通知</string>

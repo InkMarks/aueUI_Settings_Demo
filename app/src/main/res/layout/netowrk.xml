@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    tools:context=".Activities.Netowrk">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/about_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:paddingTop="10dp"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/netowrk"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+
+
+        <Button
+            android:id="@+id/netowrk_back"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/back"
+            tools:ignore="MissingConstraints" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/wlan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/wlan_1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/wlan" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="WLAN"
+                android:textColor="@color/back"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="无法连接"
+                android:textColor="#404040"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mobil_netowrk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/mobile_network" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="移动网络"
+                android:textColor="@color/back"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="无服务"
+                android:textColor="#404040"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/flow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/flow" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="流量使用情况"
+                android:textColor="@color/back"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="未使用"
+                android:textColor="#404040"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tehering"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/tehering" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="热点和网络共享"
+                android:textColor="@color/back"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/battery_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textColor="#404040"
+                android:text="关闭"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/phome" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="手机套餐"
+                android:textColor="@color/back"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vpn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/fly_mode" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="飞行模式"
+                android:textColor="@color/back"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <Switch
+            android:id="@+id/switch_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/storage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/vpn"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="VPN"
+                android:textColor="@color/back"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/storage_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textColor="#404040"
+                android:text="无"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/safe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/dns" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="私人DNS"
+                android:textColor="@color/back"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="自动"
+                android:textColor="#404040"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

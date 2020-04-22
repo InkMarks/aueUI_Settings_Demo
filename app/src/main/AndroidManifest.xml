@@ -20,6 +20,12 @@
         </activity>
         <activity android:name=".Activities.About"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".Activities.Netowrk"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Activities.Wlan"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activities.Wlan_details"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

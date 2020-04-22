@@ -10,10 +10,12 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.aueui.settings.Activities.About;
+import com.aueui.settings.Activities.Netowrk;
+import com.aueui.settings.Activities.Wlan;
 import com.aueui.settings.Base.BaseActivity;
 
 public class MainActivity extends BaseActivity {
-    private LinearLayout wifi_l, connected_device_l, app_l, battery_l, display, sound, storage, safe, about;
+    private LinearLayout netowrk, connected_device_l, app_l, battery_l, display, sound, storage, safe, about;
     private Button search;
 
     @Override
@@ -21,12 +23,16 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-        wifi_l.setOnClickListener(new View.OnClickListener() {
+        netowrk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Settings.ACTION_WIFI_SETTINGS));
+                try {
+                    startActivity(new Intent(MainActivity.this, Netowrk.class));
+                } catch (Exception e) {
+                }
             }
         });
+
         app_l.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,7 +88,7 @@ public class MainActivity extends BaseActivity {
     }
 
     private void initView() {
-        wifi_l = findViewById(R.id.wifi_l);
+        netowrk = findViewById(R.id.netork);
         connected_device_l = findViewById(R.id.connected_device_l);
         app_l = findViewById(R.id.app_l);
         battery_l = findViewById(R.id.battery_l);
